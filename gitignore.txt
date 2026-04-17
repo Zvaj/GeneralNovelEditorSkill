@@ -1,0 +1,77 @@
+# ============================================
+# .gitignore for a Claude skills repo
+# ============================================
+# Keeps noise out of your commits — OS junk,
+# editor files, temporary builds, private drafts.
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Linux ---
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# --- Editor / IDE ---
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# Obsidian (if you use Obsidian to edit the markdown)
+.obsidian/
+.trash/
+
+# --- Packaged skill artifacts ---
+# Don't commit built .skill / .zip files — the source folder is the source of truth
+*.skill
+*.zip
+
+# --- Temporary / working files ---
+*.tmp
+*.bak
+*.log
+~$*
+
+# --- Private drafts (optional) ---
+# Uncomment these if you want to keep personal story content
+# in the repo locally but NOT push it to GitHub.
+# Put your real in-progress manuscript bible in a folder called
+# `private/` at the repo root and it won't be committed.
+# private/
+# drafts/
+# manuscript/
+
+# --- Python (in case you add packaging scripts later) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
